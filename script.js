@@ -6,13 +6,13 @@ function trocarCSS() {
 
   if (cssTroca) {
 
-    linkElement.setAttribute('href', 'styleblack.css');
+    linkElement.setAttribute('href', 'black.css');
     linkpfp.setAttribute('src', 'pfpblack.jpg');
     cssTroca = false;
 
   } else {
 
-    linkElement.setAttribute('href', 'stylewhite.css');
+    linkElement.setAttribute('href', 'white.css');
     linkpfp.setAttribute('src', 'pfpwhite.jpg');
     cssTroca = true;
 
