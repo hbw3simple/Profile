@@ -1,0 +1,403 @@
+/* formatação padrão html */
+
+* {
+
+    font-family: 'Rowdies', cursive; 
+
+    margin: 0;
+    padding: 0;
+    border: 0;
+    list-style: none;
+}
+
+:root {
+    overflow-x: hidden;
+    --01-color-: #F2F2F2;
+    --02-color-: #575757;
+    --03-color-: #BFBFBF;
+    --04-color-: #A6A6A6;
+    --05-color-: #8C8C8C;
+    --06-color-: #8c8c8cb0;
+    --txt-color-: #000;
+}
+
+html {
+    background: rgb(222, 222, 222);
+    background: -moz-linear-gradient(90deg, rgba(222, 222, 222, 1) 30%, rgba(166, 166, 166, 1) 50%, rgba(222, 222, 222, 1) 70%);
+    background: -webkit-linear-gradient(90deg, rgba(222, 222, 222, 1) 30%, rgba(166, 166, 166, 1) 50%, rgba(222, 222, 222, 1) 70%);
+    background: linear-gradient(90deg, rgba(222, 222, 222, 1) 30%, rgba(166, 166, 166, 1) 50%, rgba(222, 222, 222, 1) 70%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#dedede", endColorstr="#dedede", GradientType=1);
+}
+
+header {
+    text-align: left;
+    background-image: url(mainwhite.jpg);
+    padding: .9rem;
+    height: 2.5rem;
+    transition: 1s;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3.1rem;
+    margin: 2.5rem;
+    color: var(--txt-color-);
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-top: -3.1rem;
+    color: var(--07-color-);
+}
+
+p {
+    text-align: center;
+    font-size: 1.2rem;
+    color: var(--txt-color-);
+    margin-bottom: 1.5rem;
+    margin-top: 0;
+}
+
+a {
+    color: var(--07-color-);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+span {
+    color: var(--txt-color-);
+    cursor: pointer;
+    border: 1px var(--txt-color-) solid;
+    border-radius: .3rem;
+    font-size: 1.3rem;
+    padding: .3rem;
+    transition: .5s;
+}
+
+span:hover {
+    padding: .5rem 1rem .5rem 1rem;
+    color: var(--07-color-);
+    border: .06rem var(--txt-color-) solid;
+    background-color: var(--06-color-);
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--07-color-);
+    transition: .5s;
+}
+
+li {
+    align-items: center;
+    display: inline-block;
+    border-radius: .3rem;
+    border: .06rem var(--txt-color-) solid;
+    padding: .3rem;
+    color: var(--txt-color-);
+    font-size: 1.1rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+li:hover {
+    color: var(--07-color-);
+    border: .06rem var(--txt-color-) solid;
+    background-color: var(--06-color-);
+    transition: .5s;
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--01-color-);
+}
+
+svg {
+    color: var(--01-color-);
+}
+
+/* formatação botão de mudar cor */
+
+button {
+    --button_radius: 0.75em;
+    --button_color: var(--02-color-);
+    --button_outline_color: var(--05-color-);
+    border-radius: var(--button_radius);
+    background: var(--button_outline_color);
+}
+
+.button_top {
+    display: inline-block;
+    box-sizing: border-box;
+    border: 2px solid var(--button_outline_color);
+    border-radius: var(--button_radius);
+    padding: 0.30em 1em;
+    background: var(--button_color);
+    color: var(--button_outline_color);
+    transform: translateY(-0.2em);
+    transition: transform 0.1s ease;
+}
+
+.button_top svg {
+    color: var(--txt-color-);
+}
+
+button:hover .button_top {
+    transform: translateY(-0.33em);
+}
+
+button:active .button_top {
+    transform: translateY(0);
+}
+
+/* formatação imagem pfp */
+
+.img-pfp {
+    position: relative;
+    top: 6.8rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pfp {
+    width: 10rem;
+    height: 10rem;
+    border-radius: 50%;
+    position: absolute;
+    display: flex;
+    margin-top: -14.3rem;
+    border: .1rem var(--01-color-) solid;
+    box-shadow: .5rem -.6rem .6rem var(--01-color-);
+    transition: .5s;
+}
+
+/* formatação main*/
+
+.main-infos {
+    background-image: url(mainwhite.jpg);
+    background-position: 10% 20%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 5.6rem auto 0 auto;
+    height: 31.2rem;
+    width: 28.1rem;
+    border-radius: .9rem;
+    box-shadow: .06rem;
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--01-color-);
+    transition: 1s;
+}
+
+.main-infos:hover {
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--01-color-);
+    transition: .5s;
+}
+
+.main-infos:hover .pfp {
+    width: 10.6rem;
+    height: 10.6rem;
+    margin-top: -15rem;
+    box-shadow: .5rem -.3rem 3.1rem .6rem var(--01-color-);
+    transition: .5s;
+}
+
+/* formatação do texto da main*/
+
+.content {
+    text-align: center;
+    padding-top: 3.1rem;
+}
+
+/* formatação das informações(oq faço)*/
+
+.infos {
+    justify-content: space-between;
+    text-align: center;
+    padding-top: .9rem;
+}
+
+.infos-social {
+    display: inline-block;
+}
+
+.infos-social li {
+    border: none;
+    background-color: transparent;
+}
+
+.infos-social li:hover {
+    border-radius: 50%;
+    border: none;
+    box-shadow: none;
+    background-color: transparent;
+}
+
+.infos-social li:hover svg {
+    color: var(--txt-color-);
+    border: none;
+    box-shadow: none;
+    transition: .5s;
+}
+
+/* formatação texto sobre mim*/
+
+.text-main {
+    margin: 8.4rem auto 0 auto;
+    border-radius: .9rem;
+    background-image: url(mainwhite.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--01-color-);
+    height: 31.2rem;
+    width: 50rem;
+    display: none;
+    transition: 1s;
+}
+
+.text-main:hover {
+    transition: .5s;
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--01-color-);
+}
+
+.text-main:hover .pfp {
+    width: 10.6rem;
+    height: 10.6rem;
+    margin-top: -15rem;
+    box-shadow: .5rem -.6rem 3.1rem .6rem var(--01-color-);
+    transition: .5s;
+}
+
+.text-main h1 {
+    padding-top: 4%;
+    margin: 0;
+}
+
+.text-main p {
+    margin: 0 3.1rem 0 3.1rem;
+}
+
+.text-main span {
+    margin-left: .3rem;
+}
+
+/*--------------------------------*/
+
+/* responsivo */
+/* 380px */
+
+@media (max-width: 380px) {
+
+    /* main de informações sobre mim ("home") */
+
+    .main-infos {
+        padding-top: 3.1rem;
+        height: 66vh;
+        min-height: 23.4rem;
+        max-height: 25.3rem;
+    }
+
+    .content p {
+        font-size: 1.2rem;
+    }
+
+    .content h2 {
+        font-size: 1.2rem;
+    }
+
+    .content strong {
+        display: none;
+    }
+
+    .content span {
+        font-size: 1rem;
+        margin: 0;
+    }
+
+    .content span:hover {
+        padding: .5rem .06rem .5rem .06rem;
+    }
+
+    .infos li {
+        font-size: .9rem;
+        margin: 0;
+        padding: .3rem;
+        justify-content: stretch;
+    }
+
+    .infos-social svg {
+        width: 1.7rem;
+        height: 1.7rem;
+        padding-bottom: .6rem;
+    }
+
+
+    .content {
+        padding: 0.5%;
+    }
+
+    .text-div p {
+        margin: .06rem;
+    }
+
+}
+
+/* 485px */
+
+@media (max-width: 485px) {
+    .main-infos {
+        width: 95%;
+        max-width: 30rem;
+        height: 66vh;
+        min-height: 27.8rem;
+        max-height: 31.5rem;
+    }
+
+    .content h1 {
+        font-size: 2.6rem;
+        margin: 3.1rem;
+    }
+
+    .content h2 {
+        font-size: 1.8rem;
+        color: var(--07-color-);
+    }
+}
+
+/* 824px */
+
+@media (max-width: 824px) {
+
+    .text-main {
+        margin-top: 25%;
+        margin-bottom: 5%;
+        width: 95%;
+        max-width: 50rem;
+        max-height: 51.5rem;
+        height: 78%;
+    }
+
+    .text-main h1 {
+        font-size: 4vh;
+    }
+
+    .text-main p {
+        font-size: 2vh;
+    }
+
+    .text-main span {
+        margin-top: 6.2rem;
+
+    }
+
+    .text-div {
+        padding-bottom: 3.1rem;
+    }
+
+    .text-div span {
+        font-size: 90%;
+        box-sizing: border-box;
+    }
+
+    .text-div span:hover {
+        padding-left: .3rem;
+        padding-right: .3rem;
+    }
+}
+
+@media (max-height: 740px) {
+    .main-infos {
+        height: 66vh;
+        min-height: 30.6rem;
+        max-height: 31.5rem;
+    }
+}
