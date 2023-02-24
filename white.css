@@ -59,7 +59,7 @@ p {
 }
 
 a {
-    color: var(--07-color-);
+    color: var(--02-color-);
     text-decoration: none;
     cursor: pointer;
 }
@@ -104,7 +104,7 @@ li:hover {
 }
 
 svg {
-    color: var(--01-color-);
+    color: var(--02-color-);
 }
 
 /* formatação botão de mudar cor */
