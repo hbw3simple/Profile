@@ -109,37 +109,17 @@ svg {
 
 /* formatação botão de mudar cor */
 
-button {
-    --button_radius: 0.75em;
-    --button_color: var(--02-color-);
-    --button_outline_color: var(--05-color-);
-    border-radius: var(--button_radius);
-    background: var(--button_outline_color);
+.bnt-color{
+
+    transition: transform 0.5s ease-in-out;
+
 }
 
-.button_top {
-    display: inline-block;
-    box-sizing: border-box;
-    border: 2px solid var(--button_outline_color);
-    border-radius: var(--button_radius);
-    padding: 0.30em 1em;
-    background: var(--button_color);
-    color: var(--button_outline_color);
-    transform: translateY(-0.2em);
-    transition: transform 0.1s ease;
-}
+.bnt-color:hover {
+    transform: rotate(-360deg);
+  }
 
-.button_top svg {
-    color: var(--txt-color-);
-}
 
-button:hover .button_top {
-    transform: translateY(-0.33em);
-}
-
-button:active .button_top {
-    transform: translateY(0);
-}
 
 /* formatação imagem pfp */
 
