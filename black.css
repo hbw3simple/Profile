@@ -192,6 +192,10 @@ svg {
     display: inline-block;
 }
 
+.texto-animado {
+    overflow: hidden;
+}
+
 .infos-social li {
     border: none;
     background-color: transparent;
