@@ -40,10 +40,10 @@ header {
 
 }
 
-h1 {
+h1,h3 {
     text-align: center;
     font-size: 3.1rem;
-    margin: 2.5rem;
+    margin: 2rem;
     color: var(--txt-color-);
 }
 
@@ -214,7 +214,7 @@ svg {
 /* formatação texto sobre mim*/
 
 .text-main {
-    margin: 8.4rem auto 0 auto;
+    margin: 5.6rem auto 0 auto;
     border-radius: .9rem;
     background-image: url(mainblack.png);
     background-size: cover;
