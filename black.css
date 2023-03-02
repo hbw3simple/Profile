@@ -19,18 +19,19 @@
     --04-color-: #5B5FA6;
     --05-color-: #ACB0F2;
     --06-color-: #1e2040bd;
-    --07-color-: #0e0e1a;
+    --07-color-: #111132;
     --txt-color-: #fff;
-}
 
-html {
     background: rgb(14, 14, 26);
     background: -moz-linear-gradient(90deg, rgba(14, 14, 26, 1) 0%, rgba(30, 32, 64, 1) 50%, rgba(14, 14, 26, 1) 100%);
     background: -webkit-linear-gradient(90deg, rgba(14, 14, 26, 1) 0%, rgba(30, 32, 64, 1) 50%, rgba(14, 14, 26, 1) 100%);
     background: linear-gradient(90deg, rgba(14, 14, 26, 1) 0%, rgba(30, 32, 64, 1) 50%, rgba(14, 14, 26, 1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#0e0e1a", endColorstr="#0e0e1a", GradientType=1);
-}
 
+    transition: .5s;
+    
+
+}
 header {
     text-align: left;
     background-image: url(mainblack.png);
