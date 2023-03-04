@@ -37,6 +37,88 @@ header {
     transition: 1s;
 }
 
+
+.btn-cv{
+
+    display: flex;
+    justify-content: right;
+    align-items: center;
+    text-align: center;
+
+    margin-top: -48px;
+
+}
+.btn-cv svg{
+
+    color: var(--txt-color-);
+
+}
+.download-button {
+    position: relative;
+    border-width: 0;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    font-weight: 600;
+    border-radius: 4px;
+    z-index: 1;
+   }
+   
+   .download-button .docs {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    min-height: 40px;
+    padding: 0 10px;
+    border-radius: 4px;
+    z-index: 1;
+    background-color: var(--01-color-);
+    border: solid 1px var(--02-color-);
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+   }
+   
+   .download {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 90%;
+    margin: 0 auto;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateY(0%);
+    background-color: var(--02-color-);
+    border: solid 1px var(--02-color-);
+    transition: all .5s cubic-bezier(0.77, 0, 0.175, 1);
+   }
+   
+   .download-button:hover .download {
+    transform: translateY(100%)
+   }
+   
+   .download svg polyline,.download svg line {
+    animation: docs 1s infinite;
+   }
+   
+   @keyframes docs {
+    0% {
+     transform: translateY(0%);
+    }
+   
+    50% {
+     transform: translateY(-15%);
+    }
+   
+    100% {
+     transform: translateY(0%);
+    }
+   }
+
 h1, h3 {
     text-align: center;
     font-size: 3.1rem;
@@ -318,6 +400,13 @@ svg {
 /* 485px */
 
 @media (max-width: 485px) {
+
+    .nome-cv{
+
+        display: none;
+
+    }
+
     .main-infos {
         width: 95%;
         max-width: 30rem;

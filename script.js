@@ -66,3 +66,21 @@ function replacemain3() {
   main2.style.display = "none";
 
 }
+
+function installcv(){
+
+  document.getElementById("pdf-button").addEventListener("click", function() {
+    document.getElementById("pdf-button").addEventListener("click", function() {
+      window.open("Cv/Currículo_GustavoCouto.pdf", "_blank");
+    });
+    
+  });
+  
+
+}
+
+
+
+
+
+
