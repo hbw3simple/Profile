@@ -69,17 +69,9 @@ function replacemain3() {
 
 function installcv(){
 
-  document.getElementById("pdf-button").addEventListener("click", function() {
-    document.getElementById("pdf-button").addEventListener("click", function() {
-      window.open("Cv/Currículo_GustavoCouto.pdf", "_blank");
-    });
+  window.open("Cv/Currículo_GustavoCouto.pdf", "_blank")
     
-  });
-  
-
-}
-
-
+  }
 
 
 
